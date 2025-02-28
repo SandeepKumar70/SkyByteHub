@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets//image/logo.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>SkyByteHub</title>
   </head>
   <body>
-    <nav class="">
-      <ul>
-        <li>
-          <a href="/">
-            <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
-          </a>
-        </li>
-        <li><a href="#contact">Home</a></li>
-        <li></li>
-        <li></li>
+    <nav class="flex items-center justify-between p-4 mx-12">
+      <a class="flex items-center" href="/">
+        <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
+        <h1 class="text-3xl">SkyByteHub</h1>
+    </a>
+      <ul class="flex gap-4">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- hero -->
+    <section class="flex flex-col items-center justify-center">
+      <h1 class="text-9xl py-3 leading-28 text-center mb-10">
+        <span> CREATE </span></br><span class="-ml-52"> MODERN </span> </br><span>WEBSITES</span>
+      </h1>
+
+      <img class="w-32 h-32 custom-spin" src="./assets/image/scroll-down-light.png" alt="" />
+    </section>
   </body>
 </html>
