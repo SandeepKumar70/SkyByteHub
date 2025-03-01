@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets//image/logo.png" />
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>SkyByteHub</title>
   </head>
-  <body>
-    <nav class="">
-      <ul>
-        <li>
-          <a href="/">
-            <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
-          </a>
+  <body class="relative bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-zinc-900 bg-opacity-80 backdrop-blur-md shadow-md"
+    >
+      <a class="flex items-center" href="/">
+        <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
+        <h1 class="text-3xl font-semibold ml-2">SkyByteHub</h1>
+      </a>
+      <ul class="flex gap-6 text-lg">
+        <li class="relative group">
+          <a href="#Home" class="hover:text-gray-300 relative">Home</a>
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
+          ></span>
         </li>
-        <li><a href="#contact">Home</a></li>
-        <li></li>
-        <li></li>
+        <li class="relative group">
+          <a href="#about" class="hover:text-gray-300 relative">About</a>
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
+          ></span>
+        </li>
+        <li class="relative group">
+          <a href="#contact" class="hover:text-gray-300 relative">Contact</a>
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
+          ></span>
+        </li>
       </ul>
     </nav>
+
     <!-- footer  -->
     <footer class="bg-black text-white px-4 mt-4 pt-20 pb-6">
       <div class="grid grid-cols-2">
@@ -72,5 +93,82 @@
       </div>
     </footer>
     
+
+
+    <!-- hero -->
+    <section class="relative">
+      <section class="sticky top-20 flex flex-col items-center justify-center">
+        <h1
+          class="text-3xl sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
+        >
+          <span> CREATE </span><br /><span class="-ml-52"> MODERN </span>
+          <br /><span>WEBSITES</span>
+        </h1>
+
+        <img
+          class="w-32 h-32 animate-custom-spin"
+          src="./assets/image/scroll-down-light.png"
+          alt=""
+        />
+      </section>
+
+      <section class="sticky -top-6 flex flex-col items-center justify-center">
+         
+        <img
+          id="floatingSection"
+          class="rounded-md transition-all duration-300"
+          src="./assets/image/themenectar-all-products-2-jpg.webp"
+          alt=""
+        />
+      </section>
+    </section>
+
+    <!-- Theme & Plugin Info -->
+    <section
+      class="relative h-screen flex flex-col justify-center items-center px-12 bg-black"
+    >
+      <h1 class="text-5xl text-white font-bold text-center">
+        Shaping the Future of Web Development
+      </h1>
+      <p class="mt-4 text-lg text-gray-300 text-center max-w-3xl">
+        We build innovative WordPress themes & plugins that blend aesthetics,
+        functionality, and top-tier performance. Trusted by over 150,000
+        business owners, our products help websites achieve stunning designs,
+        lightning-fast performance, and a competitive edge.
+      </p>
+    </section>
+    <section class="relative px-4">
+      <div class="sticky top-0 rounded-md">
+        <img
+          src="./assets/image/nectar-bocks-tn-2-jpg.webp"
+          class="rounded-lg shadow-lg"
+          alt=""
+        />
+        <div class="absolute bottom-24 w-full text-center">
+          <marquee
+            class="text-white text-9xl space-x-12"
+            behavior="scroll"
+            direction="left"
+          >
+            <span>Nectorblocks</span>
+            <span>Nectorblocks</span>
+          </marquee>
+        </div>
+      </div>
+      <div class="sticky top-4 rounded-md">
+        <img src="./assets//image/tn-salient-1-jpg.webp" alt="" />
+        <div class="absolute bottom-0 w-full text-center">
+          <marquee
+            class="text-white text-9xl space-x-12"
+            behavior="scroll"
+            direction="left"
+          >
+            <span>Nectorblocks</span>
+            <span>Nectorblocks</span>
+          </marquee>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
