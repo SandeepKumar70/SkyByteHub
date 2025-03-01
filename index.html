@@ -14,11 +14,11 @@
   <body class="relative bg-gray-900 text-white">
     <!-- Navbar -->
     <nav
-      class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-zinc-900 bg-opacity-80 backdrop-blur-lg shadow-md" 
+      class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-[#ffffffa5] backdrop-blur-lg shadow-md"
     >
       <a class="flex items-center" href="/">
         <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
-        <h1 class="text-3xl text-yellow-600 font-semibold ml-2">SkyByteHub</h1>
+        <h1 class="text-3xl text-yellow-500 font-semibold ml-2">SkyByteHub</h1>
       </a>
       <ul class="flex gap-6 text-lg">
         <li class="relative group">
@@ -46,7 +46,7 @@
     <section class="relative bg-yellow-600">
       <section class="sticky top-0 flex flex-col items-center justify-center">
         <h1
-          class="text-3xl sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
+          class="text-3xl mt-24 sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
         >
           <span> CREATE </span><br /><span class="-ml-52"> MODERN </span>
           <br /><span>WEBSITES</span>
@@ -119,62 +119,107 @@
 
     <!-- FAQ section  -->
     <section class="w-full max-w-2xl mx-auto py-8">
-      <h1 class="text-4xl font-bold text-center mb-6">Frequently Asked Questions</h1>
+      <h1 class="text-4xl font-bold text-center mb-6">
+        Frequently Asked Questions
+      </h1>
 
       <div class="space-y-2" id="faq-container">
-          <!-- FAQ 1 -->
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>What sets ThemeNectar apart from others?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  We are a team of passionate and skilled developers dedicated to crafting exceptional WordPress themes and plugins.
-              </p>
-          </details>
+        <!-- FAQ 1 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>What sets ThemeNectar apart from others?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            We are a team of passionate and skilled developers dedicated to
+            crafting exceptional WordPress themes and plugins.
+          </p>
+        </details>
 
-          <!-- FAQ 2 -->
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>Where can I buy ThemeNectar products?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  Salient is sold exclusively on ThemeForest, a marketplace by Envato.
-              </p>
-          </details>
+        <!-- FAQ 2 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>Where can I buy ThemeNectar products?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            Salient is sold exclusively on ThemeForest, a marketplace by Envato.
+          </p>
+        </details>
 
-          <!-- FAQ 3 -->
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>What’s the difference between Nectarblocks and Salient?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  Salient is built on WPBakery, while Nectarblocks is based on the WordPress Gutenberg editor.
-              </p>
-          </details>
+        <!-- FAQ 3 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>What’s the difference between Nectarblocks and Salient?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            Salient is built on WPBakery, while Nectarblocks is based on the
+            WordPress Gutenberg editor.
+          </p>
+        </details>
 
-          <!-- FAQ 4 -->
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>Can I convert pages between WPBakery and Nectarblocks?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  Converting WPBakery shortcodes to WordPress blocks is not feasible due to their different foundations.
-              </p>
-          </details>
+        <!-- FAQ 4 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>Can I convert pages between WPBakery and Nectarblocks?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            Converting WPBakery shortcodes to WordPress blocks is not feasible
+            due to their different foundations.
+          </p>
+        </details>
       </div>
-  </section>
+    </section>
 
     <!-- footer  -->
-    <footer class="bg-black text-white px-4 mt-4 pt-20 pb-6">
-      <div class="grid grid-cols-2">
+    <footer class="bg-black text-white">
+      <div class="grid grid-cols-2 py-8 px-4">
         <div class="grid grid-cols-2 f_font">
           <div class="block space-y-4">
             <div>
@@ -238,6 +283,12 @@
             <h1>SkyByteHub</h1>
           </div>
         </div>
+      </div>
+      <div class="bg-gray-900 text-gray-300 w-full text-center py-4">
+        <p class="text-sm md:text-xl">
+          &copy; <span id="year"></span>
+          <strong class="text-white">Skybytehub</strong>. All rights reserved.
+        </p>
       </div>
     </footer>
 
