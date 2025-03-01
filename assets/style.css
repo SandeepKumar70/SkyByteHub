@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+/* Apply the custom font */
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+h1,
+p {
+  font-family: "Heebo", sans-serif;
+}
+
+nav ul li a {
+  font-family: "Heebo", sans-serif;
+}
+
+/* Custom spin animation */
+@theme {
+
+  --animate-custom-spin': customSpin 3s linear infinite;
+  --animate-slide-in': slideIn 1s ease-out forwards;
+
+  @keyframes customSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100px) rotate(12deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+}
