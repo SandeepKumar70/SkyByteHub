@@ -8,8 +8,8 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>SkyByteHub</title>
   </head>
-  <body>
-    <nav class="flex items-center justify-between p-4 mx-12">
+  <body class="relative">
+    <nav class="fixed flex z-30 items-center justify-between p-4 mx-12">
       <a class="flex items-center" href="/">
         <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
         <h1 class="text-3xl">SkyByteHub</h1>
@@ -22,19 +22,30 @@
     </nav>
 
     <!-- hero -->
-    <section class="flex flex-col items-center justify-center">
+    <section class="sticky top-20 flex flex-col items-center justify-center">
       <h1
-        class="text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text"
+        class="text-3xl sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
       >
         <span> CREATE </span><br /><span class="-ml-52"> MODERN </span>
         <br /><span>WEBSITES</span>
       </h1>
 
       <img
-        class="w-32 h-32 custom-spin"
+        class="w-32 h-32 animate-custom-spin"
         src="./assets/image/scroll-down-light.png"
         alt=""
       />
     </section>
+
+    <section class="sticky -top-6 flex flex-col items-center justify-center">
+       
+      <img
+        id="floatingSection"
+        class="rounded-md transition-all duration-300"
+        src="./assets/image/themenectar-all-products-2-jpg.webp"
+        alt=""
+      />
+    </section>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
