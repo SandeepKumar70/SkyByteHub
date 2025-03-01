@@ -7,6 +7,32 @@ window.addEventListener("scroll", () => {
   floatingSection.style.width = `${newSize}%`;
   floatingSection.style.height = `${newSize}vh`;
 });
+// trusted section 
+const textArray = ["Top Designers", "150K Clients"];
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    let currentText = textArray[index];
+    let displayText = isDeleting 
+        ? currentText.substring(0, charIndex--) 
+        : currentText.substring(0, charIndex++);
+    
+    document.getElementById("dynamicText").textContent = displayText;
+
+    if (!isDeleting && charIndex === currentText.length + 1) {
+        setTimeout(() => isDeleting = true, 1500);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % textArray.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+
 // faq 
 document.addEventListener("DOMContentLoaded", function () {
   const detailsElements = document.querySelectorAll("#faq-container details");
