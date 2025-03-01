@@ -14,7 +14,7 @@
   <body class="relative bg-gray-900 text-white">
     <!-- Navbar -->
     <nav
-      class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-zinc-900 bg-opacity-80 backdrop-blur-md shadow-md" 
+      class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-zinc-900 bg-opacity-80 backdrop-blur-lg shadow-md" 
     >
       <a class="flex items-center" href="/">
         <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
@@ -117,6 +117,61 @@
       </div>
     </section>
 
+    <!-- FAQ section  -->
+    <section class="w-full max-w-2xl mx-auto py-8">
+      <h1 class="text-4xl font-bold text-center mb-6">Frequently Asked Questions</h1>
+
+      <div class="space-y-2" id="faq-container">
+          <!-- FAQ 1 -->
+          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+                  <span>What sets ThemeNectar apart from others?</span>
+                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+              </summary>
+              <p class="p-4 bg-[#101828] text-gray-300">
+                  We are a team of passionate and skilled developers dedicated to crafting exceptional WordPress themes and plugins.
+              </p>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+                  <span>Where can I buy ThemeNectar products?</span>
+                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+              </summary>
+              <p class="p-4 bg-[#101828] text-gray-300">
+                  Salient is sold exclusively on ThemeForest, a marketplace by Envato.
+              </p>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+                  <span>What’s the difference between Nectarblocks and Salient?</span>
+                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+              </summary>
+              <p class="p-4 bg-[#101828] text-gray-300">
+                  Salient is built on WPBakery, while Nectarblocks is based on the WordPress Gutenberg editor.
+              </p>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+                  <span>Can I convert pages between WPBakery and Nectarblocks?</span>
+                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+              </summary>
+              <p class="p-4 bg-[#101828] text-gray-300">
+                  Converting WPBakery shortcodes to WordPress blocks is not feasible due to their different foundations.
+              </p>
+          </details>
+      </div>
+  </section>
+
     <!-- footer  -->
     <footer class="bg-black text-white px-4 mt-4 pt-20 pb-6">
       <div class="grid grid-cols-2">
@@ -124,7 +179,7 @@
           <div class="block space-y-4">
             <div>
               <h1
-                class="inline-block border-b-1 border-gray-400 font-bold text-xl"
+                class="inline-block border-b-1 border-gray-400 font-bold text-xl relative group"
               >
                 Salient
               </h1>
