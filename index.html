@@ -17,33 +17,33 @@
       class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-[#ffffffa5] backdrop-blur-lg shadow-md"
     >
       <a class="flex items-center" href="/">
-        <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
-        <h1 class="text-3xl text-yellow-500 font-semibold ml-2">SkyByteHub</h1>
+        <img class="w-12 h-12" src="./assets/image/logo1.png" alt="logo" />
+        <h1 class="text-5xl text-black font-semibold ml-1">SkyByteHub</h1>
       </a>
       <ul class="flex gap-6 text-lg">
         <li class="relative group">
-          <a href="#Home" class="hover:text-gray-300 relative">Home</a>
+          <a href="#Home" class="text-black hover:text-gray-600 relative">Home</a>
           <span
-            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
           ></span>
         </li>
         <li class="relative group">
-          <a href="#about" class="hover:text-gray-300 relative">About</a>
+          <a href="#about" class="text-black hover:text-gray-600 relative">About</a>
           <span
-            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
           ></span>
         </li>
         <li class="relative group">
-          <a href="#contact" class="hover:text-gray-300 relative">Contact</a>
+          <a href="#contact" class="text-black hover:text-gray-600 relative">Contact</a>
           <span
-            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
           ></span>
         </li>
       </ul>
     </nav>
 
     <!-- hero -->
-    <section class="relative bg-yellow-600">
+    <section class="relative bg-white">
       <section class="sticky top-0 flex flex-col items-center justify-center">
         <h1
           class="text-3xl mt-24 sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
@@ -117,8 +117,9 @@
       </div>
     </section>
 
-    <!-- FAQ section  -->
-    <section class="w-full max-w-2xl mx-auto py-8">
+ <section class="relative">
+     <!-- FAQ section  -->
+    <section class="sticky top-0 w-full max-w-2xl mx-auto py-8">
       <h1 class="text-4xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h1>
@@ -218,7 +219,7 @@
     </section>
 
     <!-- footer  -->
-    <footer class="bg-black text-white">
+    <footer class="sticky -top-40 bg-black text-white">
       <div class="grid grid-cols-2 py-8 px-4">
         <div class="grid grid-cols-2 f_font">
           <div class="block space-y-4">
@@ -279,9 +280,9 @@
               />
             </div>
           </div>
-          <div class="text-7xl">
-            <h1>SkyByteHub</h1>
-          </div>
+        </div>
+        <div class="text-11xl tracking-tighter">
+          <h1>SkyByteHub</h1>
         </div>
       </div>
       <div class="bg-gray-900 text-gray-300 w-full text-center py-4">
@@ -291,6 +292,7 @@
         </p>
       </div>
     </footer>
+ </section>
 
     <script src="./assets/script.js"></script>
   </body>
