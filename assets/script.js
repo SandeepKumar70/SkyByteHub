@@ -11,9 +11,6 @@
 //   floatingSection.style.transition = "transform 0.3s ease-out"; // Smooth effect
 // });
 
-
-
-
 const floatingSection = document.getElementById("floatingSection");
 let lastScrollY = 0;
 
@@ -34,19 +31,24 @@ window.addEventListener("scroll", () => {
     lastScrollY = scrollY;
   }
 });
-// faq 
+// faq
 document.addEventListener("DOMContentLoaded", function () {
   const detailsElements = document.querySelectorAll("#faq-container details");
 
   detailsElements.forEach((details) => {
-      details.addEventListener("click", function () {
-          detailsElements.forEach((otherDetails) => {
-              if (otherDetails !== details) {
-                  otherDetails.removeAttribute("open");
-              }
-          });
+    details.addEventListener("click", function () {
+      detailsElements.forEach((otherDetails) => {
+        if (otherDetails !== details) {
+          otherDetails.removeAttribute("open");
+        }
       });
+    });
   });
+});
+
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenu.classList.toggle("hidden");
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
