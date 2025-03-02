@@ -22,7 +22,7 @@ details[open] summary ~ * {
 
 /* footer  */
 .text-11xl{
-    font-size: 13.8rem;
+    font-size: 13.8rem !important;
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: 600;

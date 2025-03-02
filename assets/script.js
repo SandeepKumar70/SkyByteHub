@@ -31,7 +31,37 @@ window.addEventListener("scroll", () => {
     lastScrollY = scrollY;
   }
 });
+<<<<<<< HEAD
+// trusted section 
+const textArray = ["Top Designers", "150K Clients"];
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    let currentText = textArray[index];
+    let displayText = isDeleting 
+        ? currentText.substring(0, charIndex--) 
+        : currentText.substring(0, charIndex++);
+    
+    document.getElementById("dynamicText").textContent = displayText;
+
+    if (!isDeleting && charIndex === currentText.length + 1) {
+        setTimeout(() => isDeleting = true, 1500);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % textArray.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+
+// faq 
+=======
 // faq
+>>>>>>> a3cf421272f1911a2847c7363d9b56b1bc0a5c42
 document.addEventListener("DOMContentLoaded", function () {
   const detailsElements = document.querySelectorAll("#faq-container details");
 
@@ -45,10 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+<<<<<<< HEAD
+// footer change year every year automatically 
+=======
 
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("hidden");
 });
 
+>>>>>>> a3cf421272f1911a2847c7363d9b56b1bc0a5c42
 document.getElementById("year").textContent = new Date().getFullYear();
