@@ -13,40 +13,54 @@
   </head>
   <body class="relative bg-gray-900 text-white">
     <!-- Navbar -->
-    <nav
-      class="sticky top-0 left-0 right-0 z-30 flex items-center justify-between p-4 bg-zinc-900 bg-opacity-80 backdrop-blur-lg shadow-md" 
-    >
+     <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-30 bg-[#ffffffa5] backdrop-blur-lg shadow-md">
+    <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
+      
+      <!-- Logo -->
       <a class="flex items-center" href="/">
-        <img class="w-12 h-12" src="./assets/image/logo.png" alt="logo" />
-        <h1 class="text-3xl text-yellow-600 font-semibold ml-2">SkyByteHub</h1>
+        <img class="w-12 h-12" src="./assets/image/logo1.png" alt="logo" />
+        <h1 class="text-2xl md:text-5xl text-black font-semibold ml-1 text">SkyByteHub</h1>
       </a>
-      <ul class="flex gap-6 text-lg">
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 text-lg">
         <li class="relative group">
-          <a href="#Home" class="hover:text-gray-300 relative">Home</a>
-          <span
-            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
-          ></span>
+          <a href="#home" class="text-black hover:text-gray-600">Home</a>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative group">
-          <a href="#about" class="hover:text-gray-300 relative">About</a>
-          <span
-            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
-          ></span>
+          <a href="#about" class="text-black hover:text-gray-600">About</a>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative group">
-          <a href="#contact" class="hover:text-gray-300 relative">Contact</a>
-          <span
-            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 ease-in-out group-hover:w-full group-hover:h-[2px]"
-          ></span>
+          <a href="#contact" class="text-black hover:text-gray-600">Contact</a>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
         </li>
       </ul>
-    </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none">
+        &#9776;
+      </button>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+        <ul class="flex flex-col text-center py-4 space-y-2 text-lg">
+          <li><a href="#home" class="block text-black hover:bg-gray-200 py-2">Home</a></li>
+          <li><a href="#about" class="block text-black hover:bg-gray-200 py-2">About</a></li>
+          <li><a href="#contact" class="block text-black hover:bg-gray-200 py-2">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 
     <!-- hero -->
-    <section class="relative bg-yellow-600">
+    <section class="relative bg-white">
       <section class="sticky top-0 flex flex-col items-center justify-center">
         <h1
-          class=" mt-20 text-3xl sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
+          class="text-3xl mt-24 sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
         >
           <span> CREATE </span><br /><span class="-ml-52"> MODERN </span>
           <br /><span>WEBSITES</span>
@@ -117,83 +131,121 @@
       </div>
     </section>
 
-    <!-- Trusted section  -->
-    <section class="bg-gradient-to-r from-white via-yellow-300 to-pink-200 text-6xl font-bold text-black text-center p-10  h-[400px]">
-    <div class="space-y-4 mt-18">
-      <h1>Trusted by</h1>
-      <h1 id="dynamicText">Industry Leaders</h1>
-    </div>
-  </section>
-
+ <section class="relative">
      <!-- FAQ section  -->
-     <section class="w-full max-w-2xl mx-auto py-8  ">
-      <h1 class="text-4xl font-bold text-center mb-6">Frequently Asked Questions</h1>
+    <section class="sticky top-0 w-full max-w-2xl mx-auto py-8">
+      <h1 class="text-4xl font-bold text-center mb-6">
+        Frequently Asked Questions
+      </h1>
 
       <div class="space-y-2" id="faq-container">
-          
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>What sets ThemeNectar apart from others?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  We are a team of passionate and skilled developers dedicated to crafting exceptional WordPress themes and plugins.
-              </p>
-          </details>
+        <!-- FAQ 1 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>What sets ThemeNectar apart from others?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            We are a team of passionate and skilled developers dedicated to
+            crafting exceptional WordPress themes and plugins.
+          </p>
+        </details>
 
-        
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>Where can I buy ThemeNectar products?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  Salient is sold exclusively on ThemeForest, a marketplace by Envato.
-              </p>
-          </details>
+        <!-- FAQ 2 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>Where can I buy ThemeNectar products?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            Salient is sold exclusively on ThemeForest, a marketplace by Envato.
+          </p>
+        </details>
 
-          
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>What’s the difference between Nectarblocks and Salient?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  Salient is built on WPBakery, while Nectarblocks is based on the WordPress Gutenberg editor.
-              </p>
-          </details>
+        <!-- FAQ 3 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>What’s the difference between Nectarblocks and Salient?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            Salient is built on WPBakery, while Nectarblocks is based on the
+            WordPress Gutenberg editor.
+          </p>
+        </details>
 
-          
-          <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
-              <summary class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
-                  <span>Can I convert pages between WPBakery and Nectarblocks?</span>
-                  <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
-                  <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
-              </summary>
-              <p class="p-4 bg-[#101828] text-gray-300">
-                  Converting WPBakery shortcodes to WordPress blocks is not feasible due to their different foundations.
-              </p>
-          </details>
+        <!-- FAQ 4 -->
+        <details
+          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
+        >
+          <summary
+            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+          >
+            <span>Can I convert pages between WPBakery and Nectarblocks?</span>
+            <span
+              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
+              >+</span
+            >
+            <span
+              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
+              >−</span
+            >
+          </summary>
+          <p class="p-4 bg-[#101828] text-gray-300">
+            Converting WPBakery shortcodes to WordPress blocks is not feasible
+            due to their different foundations.
+          </p>
+        </details>
       </div>
-  </section>
+    </section>
 
     <!-- footer  -->
-    <footer class="bg-black text-whit">
-      <div class="grid grid-cols-2">
-        <div class="grid grid-cols-2 f_font">
-          <div class="block space-y-4">
+    <footer class="sticky -top-40 bg-black text-white">
+      <div class="grid  grid-cols-1 md:grid-cols-2 py-8 px-4">
+        <div class="grid grid-cols-2  f_font">
+          <div class="block space-y-4 mx-auto md:mx-0">
             <div>
               <h1
                 class="inline-block border-b-1 border-gray-400 font-bold text-xl"
               >
                 Salient
               </h1>
-              <div class="text-gray-400">
-                <a href="#" class="block">Docs</a>
-                <a href="#" class="block">Support</a>
+              <div class="block text-gray-400">
+                <a href="#" class="block w-fit">Docs</a>
+                <a href="#" class="block w-fit">Support</a>
               </div>
             </div>
             <div>
@@ -208,7 +260,7 @@
               </div>
             </div>
           </div>
-          <div class="block text-gray-400 space-y-4">
+          <div class="block text-gray-400 space-y-4 mx-auto md:mx-0">
             <div class="">
               <a href="#" class="block w-fit">Instagram</a>
               <a href="#" class="block w-fit">Twitter</a>
@@ -222,10 +274,12 @@
             </div>
           </div>
         </div>
-        <div class="block space-y-4 f_font">
-          <h1 class="text-white text-3xl">Subscribe and never miss out</h1>
+        <div class="block space-y-4 f_font ">
+          <div>
+            <h1 class="text-white text-3xl ">Subscribe and never miss out</h1>
+          </div>
           <div
-            class="border w-[75%] rounded-full py-2 flex justify-between items-center px-2"
+            class="border w-full md:w-[80%] rounded-full py-2 flex justify-between items-center px-2"
           >
             <div>
               <input
@@ -242,17 +296,24 @@
               />
             </div>
           </div>
-          <div class="text-7xl">
-            <h1>SkyByteHub</h1>
-          </div>
         </div>
+        
+        
+        
+        
       </div>
-   
-    
-   
-    
+
+      <div class=" w-full text-center text-4xl sm:text-8xl md:text[10rem] lg:text-[12rem]">
+        <h1 class="">SkyByteHub</h1>
+      </div>
+      <div class="bg-gray-900 text-gray-300 w-full text-center py-4">
+        <p class="text-sm md:text-xl">
+          &copy; <span id="year"></span>
+          <strong class="text-white">Skybytehub</strong>. All rights reserved.
+        </p>
+      </div>
     </footer>
-   
+ </section>
 
     <script src="./assets/script.js"></script>
   </body>
