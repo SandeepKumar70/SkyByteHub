@@ -40,12 +40,12 @@
       </ul>
 
       <!-- Mobile Menu Button -->
-      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none">
+      <button id="menu-toggle" class="md:hidden text-3xl text-black focus:outline-none">
         &#9776;
       </button>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+      <div id="mobile-menu" class="hidden absolute top-full left-0 w-full  shadow-md md:hidden">
         <ul class="flex flex-col text-center py-4 space-y-2 text-lg">
           <li><a href="#home" class="block text-black hover:bg-gray-200 py-2">Home</a></li>
           <li><a href="#about" class="block text-black hover:bg-gray-200 py-2">About</a></li>
@@ -88,7 +88,7 @@
     <section
       class="relative h-screen flex flex-col justify-center items-center px-12 bg-black"
     >
-      <h1 class="text-5xl text-white font-bold text-center">
+      <h1 class="text-4xl md:text-5xl text-white font-bold text-center">
         Shaping the Future of Web Development
       </h1>
       <p class="mt-4 text-lg text-gray-300 text-center max-w-3xl">
@@ -107,7 +107,7 @@
         />
         <div class="absolute bottom-24 w-full text-center">
           <marquee
-            class="text-white text-9xl space-x-12"
+            class="text-white text-4xl sm:text-5xl  md:text-8xl lg:text-9xl space-x-12"
             behavior="scroll"
             direction="left"
           >
@@ -120,7 +120,7 @@
         <img src="./assets//image/tn-salient-1-jpg.webp" alt="" />
         <div class="absolute bottom-0 w-full text-center">
           <marquee
-            class="text-white text-9xl space-x-12"
+            class="text-white text-4xl sm:text-5xl  md:text-8xl lg:text-9xl space-x-12"
             behavior="scroll"
             direction="left"
           >
@@ -130,6 +130,47 @@
         </div>
       </div>
     </section>
+    <!-- testimonial  -->
+    <div class="overflow-hidden w-[98%] mx-auto mt-5 bg-white pt-3 pb-4 shadow-lg rounded-lg relative ">
+      <h2 class="text-center text-4xl font-bold mb-4 text-black">What Our Clients Say</h2>
+      <div class="slider-wrapper">
+          <div class="slider">
+              <div class="testimonial">
+                  <p class="italic">"This service is outstanding! Totally recommended."</p>
+                  <h3 class="mt-2 font-semibold">- John Doe</h3>
+              </div>
+              <div class="testimonial">
+                  <p class="italic">"Exceptional quality and great support. A+ experience!"</p>
+                  <h3 class="mt-2 font-semibold">- Sarah Smith</h3>
+              </div>
+              <div class="testimonial">
+                  <p class="italic">"Absolutely loved it! Great value for money."</p>
+                  <h3 class="mt-2 font-semibold">- Michael Johnson</h3>
+              </div>
+              <div class="testimonial">
+                  <p class="italic">"Will definitely use this service again. 5 Stars!"</p>
+                  <h3 class="mt-2 font-semibold">- Emily Davis</h3>
+              </div>
+              <!-- Duplicate items for smooth infinite scroll -->
+              <div class="testimonial">
+                  <p class="italic">"This service is outstanding! Totally recommended."</p>
+                  <h3 class="mt-2 font-semibold">- John Doe</h3>
+              </div>
+              <div class="testimonial">
+                  <p class="italic">"Exceptional quality and great support. A+ experience!"</p>
+                  <h3 class="mt-2 font-semibold">- Sarah Smith</h3>
+              </div>
+              <div class="testimonial">
+                  <p class="italic">"Absolutely loved it! Great value for money."</p>
+                  <h3 class="mt-2 font-semibold">- Michael Johnson</h3>
+              </div>
+              <div class="testimonial">
+                  <p class="italic">"Will definitely use this service again. 5 Stars!"</p>
+                  <h3 class="mt-2 font-semibold">- Emily Davis</h3>
+              </div>
+          </div>
+      </div>
+  </div>
 
  <section class="relative">
      <!-- FAQ section  -->
@@ -144,7 +185,7 @@
           class="group border border-gray-700 rounded-lg overflow-hidden text-black"
         >
           <summary
-            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
           >
             <span>What sets ThemeNectar apart from others?</span>
             <span
@@ -167,7 +208,7 @@
           class="group border border-gray-700 rounded-lg overflow-hidden text-black"
         >
           <summary
-            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
           >
             <span>Where can I buy ThemeNectar products?</span>
             <span
@@ -189,7 +230,7 @@
           class="group border border-gray-700 rounded-lg overflow-hidden text-black"
         >
           <summary
-            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
           >
             <span>What’s the difference between Nectarblocks and Salient?</span>
             <span
@@ -212,7 +253,7 @@
           class="group border border-gray-700 rounded-lg overflow-hidden text-black"
         >
           <summary
-            class="bg-white p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
+            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
           >
             <span>Can I convert pages between WPBakery and Nectarblocks?</span>
             <span
@@ -303,7 +344,7 @@
         
       </div>
 
-      <div class=" w-full text-center text-4xl sm:text-8xl md:text[10rem] lg:text-[12rem]">
+      <div class=" w-full text-center text-4xl sm:text-8xl md:text[10rem] lg:text-[11.2rem] pb-5">
         <h1 class="">SkyByteHub</h1>
       </div>
       <div class="bg-gray-900 text-gray-300 w-full text-center py-4">
