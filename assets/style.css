@@ -19,6 +19,34 @@ details[open] summary ~ * {
         transform: translateY(0);
     }
 }
+/* testimonial  */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.slider-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slider {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+.testimonial {
+  min-width: 300px;
+  background: black;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
 
 /* footer  */
 .text-11xl{
