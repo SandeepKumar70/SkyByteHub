@@ -110,14 +110,3 @@ nav ul li a {
     }
   }
 }
-
-.scroll-spacer{
-  height: 100vh;
-}
-.hero-section{
-  position: sticky;
-  top: 0;
-}
-.hero-wrapper{
-  margin-bottom: -100vh;
-}
