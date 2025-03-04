@@ -4,6 +4,11 @@
 /* footer links font  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* faq  */
 details[open] summary ~ * {
     animation: fadeIn 0.3s ease-in-out;
@@ -50,7 +55,7 @@ details[open] summary ~ * {
 
 /* footer  */
 .text-11xl{
-    font-size: 13.8rem !important;
+    font-size: 13rem !important;
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: 600;
@@ -79,6 +84,9 @@ nav ul li a {
 /* Custom spin animation */
 @theme {
 
+  
+  --text-large: 24rem; 
+
   --animate-custom-spin': customSpin 3s linear infinite;
   --animate-slide-in': slideIn 1s ease-out forwards;
 
@@ -103,3 +111,13 @@ nav ul li a {
   }
 }
 
+.scroll-spacer{
+  height: 100vh;
+}
+.hero-section{
+  position: sticky;
+  top: 0;
+}
+.hero-wrapper{
+  margin-bottom: -100vh;
+}
