@@ -12,29 +12,29 @@
     <title>SkyByteHub</title>
   </head>
   <body class="relative bg-gray-900 text-white">
-    <!-- Navbar -->
      <!-- Navbar -->
-  <nav class="fixed top-0 left-0 right-0 z-30 bg-[#ffffffa5] backdrop-blur-lg shadow-md">
+  <nav class="fixed top-0 left-0 right-0 z-30 bg-[#1f1d1da5] backdrop-blur-lg shadow-md">
     <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
       
       <!-- Logo -->
       <a class="flex items-center" href="/">
-        <img class="w-12 h-12" src="./assets/image/logo1.png" alt="logo" />
-        <h1 class="text-2xl md:text-5xl text-black font-semibold ml-1 text">SkyByteHub</h1>
+        <!-- <img class="w-12 h-12" src="./assets/image/logo1.png" alt="logo" />
+          -->
+        <h1 class="text-2xl md:text-5xl text-white font-semibold ml-1 text">SkyByteHub</h1>
       </a>
 
       <!-- Desktop Menu -->
-      <ul class="hidden md:flex gap-6 text-lg">
+      <ul class="hidden md:flex gap-6 text-lg text-white">
         <li class="relative group">
-          <a href="#home" class="text-black hover:text-gray-600">Home</a>
+          <a href="#home" class="hover:text-gray-100">Home</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative group">
-          <a href="#about" class="text-black hover:text-gray-600">About</a>
+          <a href="#about" class="hover:text-gray-100">About</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative group">
-          <a href="#contact" class="text-black hover:text-gray-600">Contact</a>
+          <a href="#contact" class="hover:text-gray-100">Contact</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
         </li>
       </ul>
@@ -56,24 +56,32 @@
     </div>
   </nav>
 
-    <!-- hero -->
-    <section class="relative bg-white">
-      <section class="sticky top-0 flex flex-col items-center justify-center">
-        <h1
-          class="text-3xl mt-24 sm:text-5xl md:text-7xl lg:text-9xl px-24 leading-28 text-center mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
+   <!-- hero -->
+<section class=".hero-wrapper -mb-[100vh] bg-white ">
+  <div class="sticky top-0 bg-gradient-to-tr from-blue-300 to-yellow-300 flex flex-col md:flex-row items-center justify-center gap-4 p-4">
+    <div>
+       <h1
+          class="font-bold mt-24 -ml-12 md:ml-0 px-12 text-5xl md:text-7xl lg:text-9xl md:leading-32 text-center md:mb-10 bg-[url(./assets/image/background.webp)] text-transparent bg-clip-text animate-text"
         >
-          <span> CREATE </span><br /><span class="-ml-52"> MODERN </span>
-          <br /><span>WEBSITES</span>
+          <span> CREATE </span><br /><span class="ml-20 md:-ml-52"> MODERN </span>
+          <br /><span class="ml-12 md:ml-0">WEBSITES</span>
         </h1>
+    </div>
+    <div>
+      <img class="h-[200px] md:h-[400px] mx-auto md:mt-16" src="./assets/image/image.png" alt="Hero Image">
+    </div>
 
-        <img
-          class="w-32 h-32 animate-custom-spin"
-          src="./assets/image/scroll-down-light.png"
-          alt=""
-        />
-      </section>
-
-      <section class="sticky -top-6 flex flex-col items-center justify-center">
+    <!-- Optional scroll-down image -->
+    <!-- <img
+      class="w-32 h-32 animate-custom-spin mx-auto"
+      src="./assets/image/scroll-down-light.png"
+      alt="Scroll Down"
+    /> -->
+  </div>
+  <div class="h-[96vh] md:h-[100vh]"></div>
+ 
+</section>
+<div class="relative z-20 flex flex-col items-center justify-center">
          
         <img
           id="floatingSection"
@@ -81,7 +89,8 @@
           src="./assets/image/themenectar-all-products-2-jpg.webp"
           alt=""
         />
-      </section>
+</div>
+
     </section>
 
     <!-- Theme & Plugin Info -->
@@ -129,10 +138,36 @@
           </marquee>
         </div>
       </div>
+       <div class="sticky top-4 rounded-md">
+        <img src="./assets//image/tn-salient-1-jpg.webp" alt="" />
+        <div class="absolute bottom-0 w-full text-center">
+          <marquee
+            class="text-white text-4xl sm:text-5xl  md:text-8xl lg:text-9xl space-x-12"
+            behavior="scroll"
+            direction="left"
+          >
+            <span>Nectorblocks</span>
+            <span>Nectorblocks</span>
+          </marquee>
+        </div>
+      </div>
+       <div class="sticky top-4 rounded-md">
+        <img src="./assets//image/tn-salient-1-jpg.webp" alt="" />
+        <div class="absolute bottom-0 w-full text-center">
+          <marquee
+            class="text-white text-4xl sm:text-5xl  md:text-8xl lg:text-9xl space-x-12"
+            behavior="scroll"
+            direction="left"
+          >
+            <span>Nectorblocks</span>
+            <span>Nectorblocks</span>
+          </marquee>
+        </div>
+      </div>
     </section>
     <!-- testimonial  -->
-    <div class="overflow-hidden w-[98%] mx-auto mt-5 bg-white pt-3 pb-4 shadow-lg rounded-lg relative ">
-      <h2 class="text-center text-4xl font-bold mb-4 text-black">What Our Clients Say</h2>
+    <div class="overflow-hidden mx-auto bg-white relative py-20 ">
+      <h2 class="text-start mx-10 text-3xl md:text-7xl font-bold mb-4 text-black">What Our Clients Say</h2>
       <div class="slider-wrapper">
           <div class="slider">
               <div class="testimonial">
@@ -171,130 +206,85 @@
           </div>
       </div>
   </div>
-
- <section class="relative">
-     <!-- FAQ section  -->
-    <section class="sticky top-0 w-full max-w-2xl mx-auto py-8">
-      <h1 class="text-4xl font-bold text-center mb-6">
+ 
+<!-- FAQ Section -->
+<section class="w-full bg-white z-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl mx-auto py-8 px-4">
+    <div>
+      <h1 class="text-4xl md:text-7xl leading-10 md:leading-20 font-bold text-start mb-6 md:col-span-2 text-black">
         Frequently Asked Questions
       </h1>
+    </div>
 
-      <div class="space-y-2" id="faq-container">
-        <!-- FAQ 1 -->
-        <details
-          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
-        >
-          <summary
-            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
-          >
-            <span>What sets ThemeNectar apart from others?</span>
-            <span
-              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
-              >+</span
-            >
-            <span
-              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
-              >−</span
-            >
-          </summary>
-          <p class="p-4 bg-[#101828] text-gray-300">
-            We are a team of passionate and skilled developers dedicated to
-            crafting exceptional WordPress themes and plugins.
-          </p>
-        </details>
+    <div class="space-y-2" id="faq-container">
+      <!-- FAQ 1 -->
+      <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+        <summary class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+          <span>What sets ThemeNectar apart from others?</span>
+          <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+          <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+        </summary>
+        <p class="p-4 bg-[#101828] text-gray-300">
+          We are a team of passionate and skilled developers dedicated to crafting exceptional WordPress themes and plugins.
+        </p>
+      </details>
 
-        <!-- FAQ 2 -->
-        <details
-          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
-        >
-          <summary
-            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
-          >
-            <span>Where can I buy ThemeNectar products?</span>
-            <span
-              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
-              >+</span
-            >
-            <span
-              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
-              >−</span
-            >
-          </summary>
-          <p class="p-4 bg-[#101828] text-gray-300">
-            Salient is sold exclusively on ThemeForest, a marketplace by Envato.
-          </p>
-        </details>
+      <!-- FAQ 2 -->
+      <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+        <summary class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+          <span>Where can I buy ThemeNectar products?</span>
+          <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+          <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+        </summary>
+        <p class="p-4 bg-[#101828] text-gray-300">
+          Salient is sold exclusively on ThemeForest, a marketplace by Envato.
+        </p>
+      </details>
 
-        <!-- FAQ 3 -->
-        <details
-          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
-        >
-          <summary
-            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
-          >
-            <span>What’s the difference between Nectarblocks and Salient?</span>
-            <span
-              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
-              >+</span
-            >
-            <span
-              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
-              >−</span
-            >
-          </summary>
-          <p class="p-4 bg-[#101828] text-gray-300">
-            Salient is built on WPBakery, while Nectarblocks is based on the
-            WordPress Gutenberg editor.
-          </p>
-        </details>
+      <!-- FAQ 3 -->
+      <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+        <summary class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+          <span>What’s the difference between Nectarblocks and Salient?</span>
+          <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+          <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+        </summary>
+        <p class="p-4 bg-[#101828] text-gray-300">
+          Salient is built on WPBakery, while Nectarblocks is based on the WordPress Gutenberg editor.
+        </p>
+      </details>
 
-        <!-- FAQ 4 -->
-        <details
-          class="group border border-gray-700 rounded-lg overflow-hidden text-black"
-        >
-          <summary
-            class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between"
-          >
-            <span>Can I convert pages between WPBakery and Nectarblocks?</span>
-            <span
-              class="text-2xl transition-transform group-open:hidden px-2 border rounded-full"
-              >+</span
-            >
-            <span
-              class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full"
-              >−</span
-            >
-          </summary>
-          <p class="p-4 bg-[#101828] text-gray-300">
-            Converting WPBakery shortcodes to WordPress blocks is not feasible
-            due to their different foundations.
-          </p>
-        </details>
-      </div>
-    </section>
+      <!-- FAQ 4 -->
+      <details class="group border border-gray-700 rounded-lg overflow-hidden text-black">
+        <summary class="bg-white p-2 sm:p-4 cursor-pointer text-lg font-medium flex items-center justify-between">
+          <span>Can I convert pages between WPBakery and Nectarblocks?</span>
+          <span class="text-2xl transition-transform group-open:hidden px-2 border rounded-full">+</span>
+          <span class="text-2xl transition-transform hidden group-open:inline px-2 border rounded-full">−</span>
+        </summary>
+        <p class="p-4 bg-[#101828] text-gray-300">
+          Converting WPBakery shortcodes to WordPress blocks is not feasible due to their different foundations.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+ <!-- Footer -->
+<div class="-mt-[100vh]">
+    <div class="h-[96vh] md:h-[100vh]"></div>
 
-    <!-- footer  -->
-    <footer class="sticky -top-40 bg-black text-white">
-      <div class="grid  grid-cols-1 md:grid-cols-2 py-8 px-4">
-        <div class="grid grid-cols-2  f_font">
+
+   <footer class="sticky bottom-0 -z-10 w-full bg-black text-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 py-8 px-4">
+        <div class="grid grid-cols-2 f_font">
           <div class="block space-y-4 mx-auto md:mx-0">
             <div>
-              <h1
-                class="inline-block border-b-1 border-gray-400 font-bold text-xl"
-              >
-                Salient
-              </h1>
+              <h1 class="inline-block border-b-1 border-gray-400 font-bold text-xl">Salient</h1>
               <div class="block text-gray-400">
                 <a href="#" class="block w-fit">Docs</a>
                 <a href="#" class="block w-fit">Support</a>
               </div>
             </div>
             <div>
-              <h1
-                class="inline-block border-b-1 border-gray-400 font-bold text-xl"
-              >
-                Nectorblocks
-              </h1>
+              <h1 class="inline-block border-b-1 border-gray-400 font-bold text-xl">Nectorblocks</h1>
               <div class="block text-gray-400">
                 <a href="#" class="block w-fit">Docs</a>
                 <a href="#" class="block w-fit">Support</a>
@@ -302,50 +292,37 @@
             </div>
           </div>
           <div class="block text-gray-400 space-y-4 mx-auto md:mx-0">
-            <div class="">
+            <div>
               <a href="#" class="block w-fit">Instagram</a>
               <a href="#" class="block w-fit">Twitter</a>
               <a href="#" class="block w-fit">Facebook</a>
               <a href="#" class="block w-fit">Youtube</a>
             </div>
-            <div class="">
+            <div>
               <a href="#" class="block w-fit">FAQ</a>
               <a href="#" class="block w-fit">Privacy Policy</a>
               <a href="#" class="block w-fit">Legal</a>
             </div>
           </div>
         </div>
-        <div class="block space-y-4 f_font ">
+        <div class="block space-y-4 f_font">
           <div>
-            <h1 class="text-white text-3xl ">Subscribe and never miss out</h1>
+            <h1 class="text-white text-center md:text-start text-2xl md:text-3xl">
+              Subscribe and never miss out
+            </h1>
           </div>
-          <div
-            class="border w-full md:w-[80%] rounded-full py-2 flex justify-between items-center px-2"
-          >
+          <div class="border ml-3 md:ml-0 w-12/13 md:w-[80%] rounded-full py-2 flex justify-between items-center px-2">
             <div>
-              <input
-                class="ml-3 text-xl"
-                type="text"
-                placeholder="your email address"
-              />
+              <input class="md:ml-3 text-xl outline-none" type="text" placeholder="your email address" />
             </div>
             <div class="h-8 w-8 rounded-full bg-white">
-              <img
-                class="h-6 w-6 mx-auto mt-1"
-                src="./assets/image/turn-down.png"
-                alt=""
-              />
+              <img class="h-6 w-6 mx-auto mt-1" src="./assets/image/turn-down.png" alt="" />
             </div>
           </div>
         </div>
-        
-        
-        
-        
       </div>
-
-      <div class=" w-full text-center text-4xl sm:text-8xl md:text[10rem] lg:text-[11.2rem] pb-5">
-        <h1 class="">SkyByteHub</h1>
+      <div>
+        <h1 class="w-full text-center text-6xl sm:text-8xl md:text-[13rem] px-8 py-2 mb-6">SkyByteHub</h1>
       </div>
       <div class="bg-gray-900 text-gray-300 w-full text-center py-4">
         <p class="text-sm md:text-xl">
@@ -354,7 +331,9 @@
         </p>
       </div>
     </footer>
- </section>
+</div>
+
+</section>
 
     <script src="./assets/script.js"></script>
   </body>
